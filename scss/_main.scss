@@ -1,0 +1,202 @@
+.wrapper {
+  width: 90%;
+  max-width: 1095px;
+}
+
+h1 {
+  @include h1Style;
+}
+
+h2 {
+  @include h2Style;
+}
+
+h3 {
+  @include h3Style;
+}
+
+h4 {
+  @include h4Style;
+}
+
+h5 {
+  @include h5Style;
+}
+
+p {
+  @include pStyle;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 1rem 0;
+  border-bottom: 1px solid $light-gray;
+  position: relative;
+  background-color: white;
+  z-index: 20;
+  .fa-search {
+    font-size: 2.25rem;
+    position: absolute;
+    top: 1.5rem;
+  }
+  .fa-times.search {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 31.5rem;
+  }
+  .fa-bars,
+  .fa-times {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.75rem;
+  }
+}
+
+
+.slideOutMenu {
+  background-color: white;
+  position: absolute;
+  top: 5.75rem;
+  width: 80%;
+  height: 90vh;
+  padding: 2rem;
+  z-index: 20;
+  a {
+    color: black;
+  }
+  .subMenu {
+    display: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.searchBar {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 1rem;
+  position: absolute;
+  z-index: 20;
+  input {
+    margin: 0;
+    border-radius: 0.5rem;
+  }
+}
+
+#navSignIn {
+  display: none;
+}
+
+// main styling
+main {
+  position: relative;
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+}
+
+// section one styling
+
+.sectOne {
+  padding: 2rem 0;
+  .sectOneImg {
+    margin: 1rem 0 2rem;
+  }
+  .sectOneText {
+    h4 {
+      margin: 1rem 0 1rem 0;
+    }
+  }
+}
+
+.sectTwo {
+  padding: 2rem 0;
+  background-color: $light-gray;
+  h1,
+  p {
+    margin-bottom: 1.5rem;
+  }
+  .prevCont {
+    width: 353px;
+    background-color: white;
+    margin: 1.5rem 1rem;
+    border-radius: 0.5rem;
+      img {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+      }
+    .sectTwoText {
+      padding: 0 1rem 0 2rem;
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .viewAll {
+    width: 11rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    margin: 2rem 0;
+    h5 {
+      padding: 1rem;
+    }
+  }
+}
+
+.sectThree {
+  margin: 3rem 0;
+  .storyCont {
+    width: 353px;
+    border: 1px solid $light-gray;
+    margin: 2rem 1rem;
+    border-radius: 0.5rem;
+    img {
+      width: 353px;
+      height: 237px;
+      object-fit: cover;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    } 
+    .sectThreeText {
+      padding: 2rem;
+      h4,
+      p {
+        margin: 1.5rem 0;
+      }
+    }
+  }
+  .loadMore {
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    
+    h5 {
+      padding: 1rem;
+    }
+  }
+}
+
+footer {
+  padding: 3rem 0 2rem;
+  text-align: center;
+  a {
+    color: black;
+  }
+}
